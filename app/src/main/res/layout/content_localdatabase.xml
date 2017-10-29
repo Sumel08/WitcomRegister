@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".local.LocaldatabaseActivity"
+    tools:showIn="@layout/activity_localdatabase">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eventos registrados \nen este dispositivo."
+            android:textColor="@color/textAccent"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_gravity="center"
+            android:paddingRight="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/boton"
+            android:text="consultar"
+            android:textColor="@color/custWhite"
+            android:background="@color/colorAccent"
+            android:elevation="20dp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/ll"
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
